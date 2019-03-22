@@ -4,6 +4,8 @@ export default {
       // On floute l'element
       console.log("Plugin en marche.");
       $(function() {
+        // La fonction
+        $( "body" ).click(function() {
         // S'il n'est pas connecté
         console.log($("div").is(".login-button"));
         if ($("button").is(".login-button")) {
@@ -15,6 +17,7 @@ export default {
         $('.cooked').not('.cooked:first').css('color', 'transparent').css('text-shadow', '0 0 15px rgba(0,0,0,0.5)');
         console.log("Plugin dans le jQuery.");
         }
+        });
       });
     }
   };
